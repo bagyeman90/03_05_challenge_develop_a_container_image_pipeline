@@ -24,12 +24,13 @@ env:
 
 jobs:
   integration:
-    uses: ./03_05_challenge_develop_a_container_image_pipeline_integration/.github/workflows/python-app.yml
+    uses: bagyeman90/03_05_challenge_develop_a_container_image_pipeline_integration/.github/workflows/python-app.yml@main
     permissions:
       contents: read
       checks: write
       
   build:
+    needs: [integration]
 
     runs-on: ubuntu-latest
     permissions:
