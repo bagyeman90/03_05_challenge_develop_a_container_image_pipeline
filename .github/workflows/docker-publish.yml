@@ -24,7 +24,7 @@ env:
 
 jobs:
   integration:
-    uses: /bagyeman90/03_05_challenge_develop_a_container_image_pipeline_integration/.github/workflows/python-app.yml
+    uses: ./03_05_challenge_develop_a_container_image_pipeline_integration/.github/workflows/python-app.yml
     permissions:
       contents: read
       checks: write
